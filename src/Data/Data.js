@@ -36,6 +36,60 @@ export const ProductImg = [
         img: './images/product.webp',
         title: 'Clothes',
         price: '$100',
-        btn: 'Add To Cart'
-    }
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Clothes',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Jewlery',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Jewlery',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Wathches',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Wathches',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Shoes',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Shoes',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Glasses',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
+    {
+        img: './images/product.webp',
+        title: 'Glasses',
+        price: '$100',
+        btn: 'Add To Cart',
+    },
 ]

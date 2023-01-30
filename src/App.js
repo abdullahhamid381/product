@@ -7,9 +7,10 @@ import Slider from './Component/Slider'
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Slider/>
-      <Products/>
+      <Navbar />
+      <Slider />
+ 
+      <Products />
     </div>
   )
 }
