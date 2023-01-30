@@ -6,6 +6,7 @@
     width: 95%;
     margin: 0 0 0 auto;
     padding: 1% 0;
+    position: sticky;
 }
 .container-nav{
     background: #FFFFFF;
@@ -72,3 +73,27 @@
     object-fit: cover;
   }
   
+
+
+
+
+ /*  .cata-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .cata-background{
+    background: url(images/glasses.webp) no-repeat;
+    height: 100vh;
+    max-width: 80%;
+  }
+
+  .cata-title{
+    padding: 10% 0 0 2% ;
+    width: 0%;
+  }
+  .cata-describe{
+    margin: 1% 0 0 2%;
+    width: 5%;
+    padding-bottom: 5PX;
+    border-bottom: 1px solid #FB6F58;
+  } */

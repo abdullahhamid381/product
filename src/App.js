@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Navbar from './Component/Navbar'
 import Slider from './Component/Slider'
 
@@ -7,6 +8,7 @@ const App = () => {
     <div>
       <Navbar/>
       <Slider/>
+      
     </div>
   )
 }
