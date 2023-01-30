@@ -97,3 +97,11 @@
     padding-bottom: 5PX;
     border-bottom: 1px solid #FB6F58;
   } */
+
+
+  .products-title h1{
+    font-size: 45px;
+  }
+  .products-title h5{
+    font-size: 20px;
+  }
