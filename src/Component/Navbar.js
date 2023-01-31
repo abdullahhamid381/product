@@ -14,7 +14,11 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav className="main-nav">
+
+
         {/* 1st logo part  */}
+
+
         <div className="logo">
           <h2>
             <span>T</span>echyoun
@@ -22,30 +26,34 @@ const Navbar = () => {
           </h2>
         </div>
 
+
+
         {/* 2nd menu part  */}
+
+        
         <div
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }>
           <ul>
-          <li>
-          <a href="">Home</a>
-          </li>
+            <li>
+              <a href="">Home</a>
+            </li>
             <li>
               <a href="">About</a>
             </li>
             <li>
-            <a href="Home">Contact</a>
+              <a href="Home">Contact</a>
             </li>
             <li>
-            <a href="Home">Services</a>
+              <a href="Home">Services</a>
             </li>
-           
+
           </ul>
         </div>
 
         {/* 3rd social media links */}
-       { /* <div className="social-media">
+        { /* <div className="social-media">
           <ul className="social-media-desktop">
             <li>
               <a
@@ -71,7 +79,7 @@ const Navbar = () => {
           </ul>
 
           {/* hamburget menu start  */}
-         { /* <div className="hamburger-menu">
+        { /* <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
               <GiHamburgerMenu />
             </a>

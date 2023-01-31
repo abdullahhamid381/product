@@ -356,3 +356,9 @@ font-weight: 600;
   border-radius: 8px;
   margin: 15px 0 0 0;
 }
+.input-search{
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}

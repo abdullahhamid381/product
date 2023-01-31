@@ -3,6 +3,9 @@ import { Productsdetail } from './Data/Data';
 import Products from './Products';
 
 
+
+/* THIS MAP IS FOR THE CATAGEORY FILTER BUTTON  */
+
 const uniqueList = [
     ...new Set(Productsdetail.map((Productdatamap) => {
         return Productdatamap.catageory
@@ -14,23 +17,37 @@ const uniqueList = [
 
 
 const ProductsMenu = () => {
+
+    /* FOR STORING THE PRODUCT DETAILS */
+
     const [Productdata, setProductdata] = useState(Productsdetail);
+
+
+    /* FOR STORING THE UNIQUE CATAGEORY OF FILTER BUUTON */
+
     const [Uniquedata, setUniquedata] = useState(uniqueList);
+
+
+    /* FOR SEARCHING THE PRODUCt */
+
     const [search, setSearch] = useState('');
+
+    /* FOR FILTER THE PRODUCTS */
+
     const filter = (catageory) => {
         const updatelist = Productsdetail.filter((Productdatamap) => {
             return Productdatamap.catageory === catageory
         });
         setProductdata(updatelist)
     }
-    console.log(search);
+
     return (
         <Fragment>
 
 
-            <div className='coulmn-divison'>
+            <div className='coulmn-divison'  /*  this div for the coulmn division */ >
                 <div className='product-filter-button'>
-                <input type="text" placeholder='Search Here' value={search} onChange={(e)=> setSearch(e.target.value)} />
+                    <input type="text" placeholder='Search Here' className='input-search' value={search} onChange={(e) => setSearch(e.target.value)} />
                     <h1 style={{ padding: '20px 20px' }}>Catageory</h1>
                     <button onClick={() => setProductdata(Productsdetail)}>All Products</button>
                     {
@@ -46,7 +63,7 @@ const ProductsMenu = () => {
                     }
 
                 </div>
-
+                {/* FOR CALLING THE PRODUCT CARD DATA */}
                 <div>
                     <Products search={search} setSearch={setSearch} Productdata={Productdata} />
                 </div>
