@@ -16,20 +16,23 @@ const uniqueList = [
 const ProductsMenu = () => {
     const [Productdata, setProductdata] = useState(Productsdetail);
     const [Uniquedata, setUniquedata] = useState(uniqueList);
+    const [search, setSearch] = useState('');
     const filter = (catageory) => {
         const updatelist = Productsdetail.filter((Productdatamap) => {
             return Productdatamap.catageory === catageory
         });
         setProductdata(updatelist)
     }
+    console.log(search);
     return (
         <Fragment>
 
 
             <div className='coulmn-divison'>
                 <div className='product-filter-button'>
-                <h1 style={{padding:'20px 20px'}}>Catageory</h1>
-                <button onClick={() => setProductdata(Productsdetail)}>All Products</button>
+                <input type="text" placeholder='Search Here' value={search} onChange={(e)=> setSearch(e.target.value)} />
+                    <h1 style={{ padding: '20px 20px' }}>Catageory</h1>
+                    <button onClick={() => setProductdata(Productsdetail)}>All Products</button>
                     {
                         Uniquedata.map((Productdatamap) => {
                             return (
@@ -41,11 +44,11 @@ const ProductsMenu = () => {
                             )
                         })
                     }
-                   
+
                 </div>
 
                 <div>
-                    <Products Productdata={Productdata} />
+                    <Products search={search} setSearch={setSearch} Productdata={Productdata} />
                 </div>
             </div>
         </Fragment>

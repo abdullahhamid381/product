@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
-const Products = ({ Productdata }) => {
+const Products = ({ Productdata ,search,setSearch}) => {
 
     return (
         <Fragment>
           <div className='product-grid '>
           {
-            Productdata.map((Productdatamap) => {
-                const {img , title , price,btn,descrive } = Productdatamap
+            Productdata.filter(filterItem=> filterItem.title.toLowerCase().includes(search)).map((Productdatamap) => {
+                const {img , title , price,btn,descrive } = Productdatamap;
+
                 return (
                     <div className='products-parent'>
                         <div>
