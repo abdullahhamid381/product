@@ -1,16 +1,13 @@
 import React from 'react'
-
+import Main from './Component/Main'
 import Navbar from './Component/Navbar'
-import Products from './Component/Products'
-import Slider from './Component/Slider'
+import ProductsMenu from './Component/ProductsMenu'
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Slider />
- 
-      <Products />
+    <Navbar/>
+     <Main/>
     </div>
   )
 }
