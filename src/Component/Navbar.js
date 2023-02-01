@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* 2nd menu part  */}
 
-        
+
         <div
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
