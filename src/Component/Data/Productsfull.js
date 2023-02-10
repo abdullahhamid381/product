@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Productfulldetail, Productsdetail } from "./Data";
+import ProductImagesSlider from "./Slider";
+
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/thumbs'
+
+
 
 const Productsfull = () => {
   const [state, setstate] = useState(0);
@@ -22,7 +30,7 @@ const Productsfull = () => {
     <div>
       <div className="productfull-grid">
         {/*  PRODUCT IMAGE */}
-
+        <ProductImagesSlider />
         <div>
           <img src={img} alt="" />
         </div>
@@ -31,14 +39,14 @@ const Productsfull = () => {
 
         <div style={{ width: "80%" }}>
           <h1 className="productfull-title">
-          {descrive}
+            {descrive}
           </h1>
           <div className="brand-detail">
             <span style={{ color: "gray", fontSize: "18px" }}> Brand : </span>
             <span className="brand-name"> No Brand </span>
             <span className="for-more-brand">
               {formorebrand}
-             {catageory}
+              {catageory}
             </span>
           </div>
 
